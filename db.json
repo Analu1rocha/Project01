@@ -1,0 +1,15 @@
+{
+  "variaveis":[
+  {
+      "cpf":67867601040,
+      "cpfConstaAnaliseEspecial": "Consta na lista com alerta de mídia negativa",
+      "cpfConstaListaPep": 1,
+      "situacaoCpf": 2,
+      "similaridadeNome": 1,
+      "dataNascimentoProposta": 1,
+      "cepEnderecoPreenchido": 1,
+      "profissao":"Checar com CBO",
+      "rendaDeclarada": 1
+      
+  }]
+  }

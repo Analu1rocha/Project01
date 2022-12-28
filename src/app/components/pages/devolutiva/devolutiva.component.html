@@ -1,0 +1,106 @@
+
+<app-header></app-header>
+<app-rotas></app-rotas>
+
+<!--Sessão azul-->
+
+<section class="grid-container" id="GF">
+
+<table class="table-a">
+    <tr class="dados-consulta">
+      <td>Data Avaliação</td>
+      <td>N° Proposta</td>
+      <td>Produto</td>
+      <td>CPF</td>
+      <td>Nome</td>
+      <td>Vinculo CNPJ</td>
+    </tr>
+
+  <tr class="dados-resposta">
+    <td>{{dataAval}}</td>
+    <td>{{nProposta}} </td>
+    <td>{{produto}}</td>
+    <td>{{cpf}}</td>
+    <td>{{nome}}</td>
+    <td class="ico-td">{{vinculoCnpj}} <fa-icon class="ico-dev"  [icon]="faLink"></fa-icon></td>
+  </tr>
+ </table>
+</section>
+
+<!--Sessão verde-->
+<section id="filtro-green" >
+
+  <div class="ls-custom-select">
+    <select class="item">
+        <option value="1"> Área implantação </option>
+        <option value="2"> Vida</option>
+        <option value="3"> Saúde </option>
+        <option value="4"> Previdência </option>
+    </select>
+</div>
+
+<div class="ls-custom-select">
+  <select class="item">
+      <option value="1"> Todos em análise</option>
+      <option value="2"> Aprovado</option>
+      <option value="3"> Em análise</option>
+      <option value="4"> Reprovado </option>
+  </select>
+</div>
+
+</section>
+
+<section id="table-devolutiva">
+
+<table class="table-d">
+
+<tr class="tr-d">
+  <th>Avaliação</th>
+  <th>Resultado da avaliação</th>
+  <th>Sugestão de encaminhamento</th>
+</tr>
+
+<tr>
+  <td class="td-d">1 Análises especiais</td>
+  <td class="td-d"><fa-icon  class="ico-td-circle" class="ico-red" [icon]="farCircleDot"></fa-icon>&nbsp;Consta na lista com alerta de mídia negativa</td>
+  <td class="td-d">Encaminhar para Complience indicando restrições </td>
+</tr>
+<tr>
+  <td class="td-d">2 Pessoas Politicamente Exposta (PEP)</td>
+  <td class="td-d"><fa-icon class="ico-td-circle" class="ico-yellow" [icon]="farCircleDot"></fa-icon>&nbsp;CPF consta na lista PEP</td>
+  <td class="td-d">Encaminhar para Complience indicando PEP </td>
+</tr>
+<tr>
+  <td class="td-d">3 Autenticidade de CPF</td>
+  <td class="td-d"><fa-icon class="ico-td-circle" class="ico-yellow" [icon]="farCircleDot"></fa-icon>&nbsp;CPF pendente de regularização</td>
+  <td class="td-d">Avaliar XX ou encaminhar para área XX </td>
+</tr>
+<tr>
+  <td class="td-d">4 Similaridade do nome</td>
+  <td class="td-d"><fa-icon class="ico-td-circle"  class="ico-green" [icon]="farCircleDot"></fa-icon>&nbsp;Nome com similaridade entre 0 a 75%</td>
+  <td class="td-d">Seguir com fluxo de aprovação </td>
+</tr>
+<tr>
+  <td class="td-d">5 Data de nascimento</td>
+  <td class="td-d"><fa-icon class="ico-td-circle"  class="ico-yellow" [icon]="farCircleDot"></fa-icon>&nbsp;Data de nascimento divergente</td>
+  <td class="td-d">Avaliar XX ou encaminhar para área XX </td>
+</tr>
+<tr  class="tr-black">
+  <td class="td-d">6 Validação do CEP</td>
+  <td class="td-d"><fa-icon  class="ico-td-circle" class="white"[icon]="farCircleDot"></fa-icon>&nbsp;Váriavel <span class="cor-span">não consultada</span> por regras de validação</td>
+  <td class="td-d">- </td>
+</tr>
+<tr  class="tr-black">
+  <td class="td-d">7 Renda declarada</td>
+  <td class="td-d"><fa-icon class="ico-td-circle"  class="white" [icon]="farCircleDot"></fa-icon>&nbsp;Váriavel <span class="cor-span">não encontrada</span> na base externa (bureau)</td>
+  <td class="td-d">- </td>
+</tr>
+<tr class="tr-black">
+  <td class="td-d">8 CPF na lista de análises especiais</td>
+  <td class="td-d"><fa-icon  class="ico-td-circle"  class="white" [icon]="farCircleDot"></fa-icon>&nbsp;Váriavel <span class="cor-span">não preenchida</span> na proposta</td>
+  <td class="td-d">- </td>
+</tr>
+
+</table>
+</section>
+
