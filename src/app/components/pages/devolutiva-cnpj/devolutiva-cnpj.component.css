@@ -190,6 +190,7 @@ h3 {
   margin-top:30px;
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 6px;
 }
 
 .ico-info{
