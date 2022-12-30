@@ -16,6 +16,7 @@ import { DadosDaPropostaComponent } from './components/pages/dados-da-proposta/d
 import { FooterComponent } from './components/footer/footer.component';
 import { DevolutivaCnpjComponent } from './components/pages/devolutiva-cnpj/devolutiva-cnpj.component';
 import { RotasComponent } from './components/rotas/rotas.component';
+import { DadosDeRelatorioComponent } from './components/pages/dados-de-relatorio/dados-de-relatorio.component';
 
 
 
@@ -28,7 +29,8 @@ import { RotasComponent } from './components/rotas/rotas.component';
     DadosDaPropostaComponent,
     FooterComponent,
     DevolutivaCnpjComponent,
-    RotasComponent
+    RotasComponent,
+    DadosDeRelatorioComponent
   ],
   imports: [
     BrowserModule,
